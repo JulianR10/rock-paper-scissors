@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <div class="container">
+    <section class="results">
+      <figure class="container-logo">
+        <img src="./images/logo.svg" alt="">
+      </figure>
+      <div class="container-score">
+        <p class="title-score">
+          SCORE
+        </p>
+        <p class="number-score">
+        12
+        </p>
+      </div>
+    </section>
+    <!--FIRST STEP-->
+    <section class="container-elements">
+      <div class="container-hands">
+
+        <input type="radio" id="input-paper" name="ppt">
+        <label for="input-paper">
+          <figure class="figure-paper elementos-hover">
+            <div class="div-paper">
+              <img src="./images/icon-paper.svg" alt="">
+            </div>
+          </figure>
+        </label>
+
+        <input type="radio" id="input-scissors" name="ppt">
+        <label for="input-scissors">
+          <figure class="figure-scissors">
+            <div class="div-scissors">
+              <img src="./images/icon-scissors.svg" alt="">
+            </div>
+          </figure>
+        </label>
+
+        <input type="radio" id="input-rock" name="ppt">
+        <label for="input-rock">
+          <figure class="figure-rock">
+            <div class="div-rock">
+              <img src="./images/icon-rock.svg" alt="">
+            </div>
+          </figure>
+        </label>
+        
+      </div>
+      <button id="seleccionar-elemento">SELECCIONAR</button>
+    </section>
+    <!--SECOND STEP-->
+    <section class="container-ataques">
+      <div class="ataque-jugador flex-column-center">
+        <h2>YOU PICKED</h2>
+        <div class="elemento-jugador">
+        </div>
+      </div>
+
+      <div class="container-result">
+        <p class="result"></p>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div class="ataque-enemigo flex-column-center">
+        <h2>THE HOUSE PICKED</h2>
+        <div class="elemento-enemigo">
+        </div>
+      </div>
+    </section>
+    <!--FIN SECOND STEP-->
+
+    <section class="container-rules align-right">
+      <button class="rules" id="btn-rules">
+        RULES
+      </button>
+    </section>
+    <section class="container-modal">
+      <div>
+        <h2>RULES</h2>
+        <p id="quitar-modal">X</p>
+      </div>
+      <figure>
+        <img src="./images/image-rules.svg" alt="">
+      </figure>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
